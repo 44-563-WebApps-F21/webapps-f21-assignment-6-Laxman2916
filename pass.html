@@ -18,6 +18,7 @@
 </form>
 
 <p id="result">This text will be replaced </p>
+<img src="images/ant.jpg" class="img-thumbnail" alt="ant" onclick="newImage();" id="images" style="width: 200; height: 200;">
 
 
 <script> 
@@ -41,4 +42,20 @@ if(sphrase == phrase){
     out.innerHTML = "Wrong:" +wrong
 }
 }
+function newImage(){
+            switch(count){
+                case 0 :
+                    document.getElementById("images").src="images/ant.jpg"
+                    count = count+1
+                    break;
+                case 1 :
+                    document.getElementById("images").src="images/jagur.jpg"
+                    count = count+1
+                    break;
+                case 2 :
+                    document.getElementById("images").src="images/Neapolitan Mastiff.jpg"
+                    count = 0
+                    break;                    
+            }
+        }
 </script>
